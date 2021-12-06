@@ -1,0 +1,52 @@
+body {
+    background-image: url("./images/background-image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-dark{
+    color :white;
+    width: 80%;  
+    margin-left: 10%;
+    margin-bottom: 10%; 
+}
+.translate-middle{
+    margin-top: 5%;
+}
+.rock{
+    display: none;
+    position: absolute;
+    width: 22%;
+    top: 295px;
+    left: 100px;
+}
+.papper{
+    display: none;
+    position: absolute;
+    width: 22%;
+    top: 290px;
+    left: 100px;
+}
+.scissors{
+    display: none;
+    position: absolute;
+    width: 22%;
+    top: 310px;
+    left: 100px;
+}
+.badge {
+    background-color: grey;
+    width: 40px;
+    height: 32px;
+}
+.computeur{
+    position: absolute;
+    right: 10px;
+}
+.counters{
+    margin :10px
+}
+.btn{
+    width: 190px;
+    height: 60px;
+    font-size: 24px;
+}
