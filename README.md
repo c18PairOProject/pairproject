@@ -1,1 +1,1 @@
-# pairproject
+# pairprojects
