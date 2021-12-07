@@ -1,0 +1,172 @@
+.bg-dark{
+    color :white;
+    width: 80%;  
+    margin-left: 10%;
+    margin-bottom: 10%; 
+}
+.translate-middle{
+    margin-top: 5%;
+}
+.rock{
+    display: none;
+    position: absolute;
+    width: 22%;
+    top: 295px;
+    left: 100px;
+}
+.papper{
+    display: none;
+    position: absolute;
+    width: 22%;
+    top: 290px;
+    left: 100px;
+}
+.scissors{
+    display: none;
+    position: absolute;
+    width: 22%;
+    top: 310px;
+    left: 100px;
+}
+.badge {
+    background-color: grey;
+    width: 40px;
+    height: 32px;
+}
+.computeur{
+    position: absolute;
+    right: 10px;
+}
+.counters{
+    margin :10px
+}
+.btn{
+    width: 190px;
+    height: 60px;
+    font-size: 24px;
+}
+.rockCom{
+    display: none;
+    position: absolute;
+    width: 22%;
+    top: 295px;
+    right: 100px;
+}
+.papperCom{
+    display: none;
+    position: absolute;
+    width: 22%;
+    top: 290px;
+    right: 100px;
+}
+.scissorsCom{
+    display: none;
+    position: absolute;
+    width: 22%;
+    top: 310px;
+    right: 100px;
+}
+.playerName{
+    position: absolute;
+    margin-right: 45%;
+    top: 180px;
+    margin-left: 45%;
+}
+.computeur-msg{
+    color: red;
+    font-size: 43px;
+    margin-left: 70%;
+    margin-top: 50px;
+}
+.player-msg{
+    color: green;
+    font-size: 43px;
+    margin-left: 10%;
+    margin-top: 50px;
+}
+.draw-msg{
+    color: #3388b8;
+    font-size: 43px;
+    margin-left: 37%;
+    margin-top: 50px;
+}
+p{
+    font-style: italic;
+}
+h1{
+    font-style: italic;
+    font-size: 60px;
+    position: absolute;
+    left: 820px;
+    top: 175px;
+}
+.bg-success{
+    position: absolute;
+    height: 55px;
+    top: 540px;
+    left: 800px;
+    width: 150px;
+}
+
+.name{
+    position: absolute;
+    left: 15px;
+    top: 310px;
+    display: none;
+}
+.sub{
+    position: absolute;
+    left: 90px;
+    top: 345px;
+    display: block;
+    display: none;
+    background-color: #ff7210;
+}
+.badge.player{
+    position: absolute;
+    top: 25px;
+    left: 145px;
+    padding: 10px;
+}
+.bg-danger{
+    position: absolute;
+    height: 55px;
+    top: 540px;
+    left: 950px;
+    width: 150px;
+}
+
+.firstTitle{
+    left: 720px;
+    font-style: italic;
+    font-size: 100px;
+    position: absolute;
+    color: #ff7210;
+    top: 10px;
+}
+.rules {
+    display: block;
+    text-align: center;
+    margin-top: 80px;
+    color: #ff7210;
+    font-size: 100px;
+}
+.rulesP{
+    margin-left: 30px;
+    text-align: center;
+    font-size: 30px;
+    color: #ff1010;
+    margin-right: 50px;
+}
+.computeur.btn{
+    display: block;
+    top: 10px;
+}
+.badge.computeur{
+    position: initial;
+}
+.btn-group{
+    width: 500px;
+    height: 125px;
+    left: 680px;
+}
