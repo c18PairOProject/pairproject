@@ -46,17 +46,17 @@ var imagesCom = $("<div></div>")
 images.addClass("imagesCom") 
 $("body").append(imagesCom);
 
-var rockImgCom = $("<img src='./images/button-image-rock.png' >")
+var rockImgCom = $("<img src='./images/button-image-rock-com.png' >")
 $(rockImgCom).addClass("rockCom");
 $(rockImgCom).appendTo(imagesCom);
 
 
-var papperImgCom = $("<img src='./images/button-image-papper.png' >")
+var papperImgCom = $("<img src='./images/button-image-papper-com.png' >")
 $(papperImgCom).addClass("papperCom");
 $(papperImgCom).appendTo(imagesCom);
 
 
-var scissorsImgCom = $("<img src='./images/button-image-scissors.png' >")
+var scissorsImgCom = $("<img src='./images/button-image-scissors-com.png' >")
 $(scissorsImgCom).addClass("scissorsCom");
 $(scissorsImgCom).appendTo(imagesCom);
 
@@ -167,8 +167,6 @@ $(".firstTitle").click(function(){
 })
 
 $(start).click(function(){
-    imageEnter= 'url("./images/box-ring.jpg")'
-    $("body").css({"background-image":imageEnter,"background-size": "cover","background-repeat": "no-repeat"})
     $(secondTitle).show()
     $(rules).show()
     $(".name").show()
@@ -242,7 +240,7 @@ $(rock).click(function () {
     $(scissorsImg).hide()
 
     var random = Math.floor(Math.random()*1000 )
-    if (random>1 && random<335){
+    if (random>=1 && random<335){
         $(rockImgCom).show()
         $(papperImgCom).hide()
         $(scissorsImgCom).hide()
@@ -267,7 +265,7 @@ $(rock).click(function () {
         $(computeurP).show()
         $(drawP).hide()
         computeurCounterNumbers.text(computeurScore)
-            userCounterNumbers.text(playerScore)
+        userCounterNumbers.text(playerScore)
     }
     else {
         $(rockImgCom).hide()
@@ -280,7 +278,7 @@ $(rock).click(function () {
         $(computeurP).hide()
         $(drawP).hide()
         computeurCounterNumbers.text(computeurScore)
-            userCounterNumbers.text(playerScore)
+        userCounterNumbers.text(playerScore)
         
     }
     if(computeurScore === 3){
