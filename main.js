@@ -78,25 +78,25 @@ userCounterNumbers.addClass("badge player")
 userCounterNumbers.text(0)
 $("body").append(userCounterNumbers);
 
-var computeurCounter= $("<button></button>")
-computeurCounter.addClass("computeur btn btn-primary")
-computeurCounter.attr('disabled','disabled')
-computeurCounter.text("computeur")
-$(counter).append(computeurCounter);
+var computerCounter= $("<button></button>")
+computerCounter.addClass("computer btn btn-primary")
+computerCounter.attr('disabled','disabled')
+computerCounter.text("computer")
+$(counter).append(computerCounter);
 
 
-var computeurCounterNumbers = $("<span></span>")
-computeurCounterNumbers.addClass("badge computeur")
-computeurCounterNumbers.text(0)
-$(computeurCounter).append(computeurCounterNumbers);
+var computerCounterNumbers = $("<span></span>")
+computerCounterNumbers.addClass("badge computer")
+computerCounterNumbers.text(0)
+$(computerCounter).append(computerCounterNumbers);
 
 var playerP = $("<p></p>")
 playerP.addClass("player-msg")
 $("body").append(playerP);
 
-var computeurP = $("<p></p>")
-computeurP.addClass("computeur-msg")
-$("body").append(computeurP);
+var computerP = $("<p></p>")
+computerP.addClass("computer-msg")
+$("body").append(computerP);
 
 var drawP = $("<p></p>")
 drawP.addClass("draw-msg")
@@ -123,7 +123,7 @@ secondTitle.addClass('rules')
 $("body").append(secondTitle)
 
 var playerScore = 0
-var computeurScore = 0
+var computerScore = 0
 
 var rules = $("<p></p>")
 rules.addClass("rulesP")
@@ -134,7 +134,7 @@ var imageEnter = 'url("http://ryanmarkel.files.wordpress.com/2010/07/rock_paper_
 $("body").css({"background-image":imageEnter,"background-size": "cover","background-repeat": "no-repeat"})
 $(".player.btn").hide()
 $(".badge.player").hide()
-$(".computeur.btn").hide()
+$(".computer.btn").hide()
 $(".rules").hide()
 $(".rulesP").hide()
 $(start).hide()
@@ -154,8 +154,8 @@ $(".firstTitle").click(function(){
     $(start).hide()
     $(playAgain).hide()
     playerScore = 0
-    computeurScore = 0
-    computeurCounterNumbers.text(0)
+    computerScore = 0
+    computerCounterNumbers.text(0)
     userCounterNumbers.text(0)
     $(title).hide()
     $(rockImg).hide()
@@ -177,8 +177,8 @@ $(start).click(function(){
     $(start).hide()
     $(playAgain).hide()
     playerScore = 0
-    computeurScore = 0
-    computeurCounterNumbers.text(0)
+    computerScore = 0
+    computerCounterNumbers.text(0)
     userCounterNumbers.text(0)
     $(title).hide()
     $(rockImg).hide()
@@ -201,7 +201,7 @@ $(".sub").click(function(){
     $(".rulesP").hide()
     $(".rules").hide()
     $(userCounter).show()
-    $(computeurCounter).show()
+    $(computerCounter).show()
     $(userCounterNumbers).show()
     
     
@@ -221,8 +221,8 @@ $(playAgain).click(function(){
     $(start).hide()
     $(playAgain).hide()
     playerScore = 0
-    computeurScore = 0
-    computeurCounterNumbers.text(0)
+    computerScore = 0
+    computerCounterNumbers.text(0)
     userCounterNumbers.text(0)
     $(title).hide()
     $(rockImg).hide()
@@ -247,9 +247,9 @@ $(rock).click(function () {
         random = Math.floor(Math.random()*1000 )
         $(drawP).text("It's a draw , no one win")
         $(playerP).hide()
-        $(computeurP).hide()
+        $(computerP).hide()
         $(drawP).show()
-        computeurCounterNumbers.text(computeurScore)
+        computerCounterNumbers.text(computerScore)
         userCounterNumbers.text(playerScore)
 
         
@@ -259,12 +259,12 @@ $(rock).click(function () {
         $(papperImgCom).show()
         $(scissorsImgCom).hide()
         random = Math.floor(Math.random()*1000 )
-        computeurScore+= 1
-        $(computeurP).text("You lost")
+        computerScore+= 1
+        $(computerP).text("You lost")
         $(playerP).hide()
-        $(computeurP).show()
+        $(computerP).show()
         $(drawP).hide()
-        computeurCounterNumbers.text(computeurScore)
+        computerCounterNumbers.text(computerScore)
         userCounterNumbers.text(playerScore)
     }
     else {
@@ -275,18 +275,18 @@ $(rock).click(function () {
         playerScore+= 1
         $(playerP).text("You win")
         $(playerP).show()
-        $(computeurP).hide()
+        $(computerP).hide()
         $(drawP).hide()
-        computeurCounterNumbers.text(computeurScore)
+        computerCounterNumbers.text(computerScore)
         userCounterNumbers.text(playerScore)
         
     }
-    if(computeurScore === 3){
+    if(computerScore === 3){
         rock.css("display","none")
         papper.css("display","none")
         scissors.css("display","none")
         playerP.css("display","none")
-        computeurP.css("display","none")
+        computerP.css("display","none")
         title.text("YOU LOST")
         $(title).show()
         $(start).show()
@@ -297,7 +297,7 @@ $(rock).click(function () {
         papper.css("display","none")
         scissors.css("display","none")
         playerP.css("display","none")
-        computeurP.css("display","none")
+        computerP.css("display","none")
         title.text("YOU WIN")
         $(title).show()
         $(start).show()
@@ -319,9 +319,9 @@ $(papper).click(function () {
             playerScore+= 1
             $(playerP).text("You win")
             $(playerP).show()
-            $(computeurP).hide()
+            $(computerP).hide()
             $(drawP).hide()
-            computeurCounterNumbers.text(computeurScore)
+            computerCounterNumbers.text(computerScore)
             userCounterNumbers.text(playerScore)
         }
         else if (random>336 && random <750){
@@ -331,9 +331,9 @@ $(papper).click(function () {
             random = Math.floor(Math.random()*1000 )
             $(drawP).text("It's a draw , no one win")
             $(playerP).hide()
-            $(computeurP).hide()
+            $(computerP).hide()
             $(drawP).show() 
-            computeurCounterNumbers.text(computeurScore)
+            computerCounterNumbers.text(computerScore)
             userCounterNumbers.text(playerScore)
         }
         else {
@@ -341,20 +341,20 @@ $(papper).click(function () {
             $(papperImgCom).hide()
             $(scissorsImgCom).show()
             random = Math.floor(Math.random()*1000 )
-            computeurScore+= 1
-            $(computeurP).text("You lost")
+            computerScore+= 1
+            $(computerP).text("You lost")
             $(playerP).hide()
-            $(computeurP).show()
+            $(computerP).show()
             $(drawP).hide()
-            computeurCounterNumbers.text(computeurScore)
+            computerCounterNumbers.text(computerScore)
             userCounterNumbers.text(playerScore)
         }
-        if(computeurScore === 3){
+        if(computerScore === 3){
             rock.css("display","none")
             papper.css("display","none")
             scissors.css("display","none")
             playerP.css("display","none")
-            computeurP.css("display","none")    
+            computerP.css("display","none")    
             title.text("YOU LOST")
             $(title).show()
             $(start).show()
@@ -365,7 +365,7 @@ $(papper).click(function () {
             papper.css("display","none")
             scissors.css("display","none")
             playerP.css("display","none")
-            computeurP.css("display","none")
+            computerP.css("display","none")
             title.text("YOU WIN")
             $(title).show()
             $(start).show()
@@ -383,12 +383,12 @@ $(scissors).click(function () {
         $(papperImgCom).hide()
         $(scissorsImgCom).hide()
         random = Math.floor(Math.random()*1000 )
-        computeurScore += 1
-        $(computeurP).text("You lost")
+        computerScore += 1
+        $(computerP).text("You lost")
         $(playerP).hide()
-        $(computeurP).show()
+        $(computerP).show()
         $(drawP).hide()
-        computeurCounterNumbers.text(computeurScore)
+        computerCounterNumbers.text(computerScore)
         userCounterNumbers.text(playerScore)
     }
     else if (random>336 && random <750){
@@ -399,9 +399,9 @@ $(scissors).click(function () {
         playerScore+=1
         $(playerP).text("You win")
         $(playerP).show()
-        $(computeurP).hide()
+        $(computerP).hide()
         $(drawP).hide()
-        computeurCounterNumbers.text(computeurScore)
+        computerCounterNumbers.text(computerScore)
             userCounterNumbers.text(playerScore)
     }
     else {
@@ -411,17 +411,17 @@ $(scissors).click(function () {
         random = Math.floor(Math.random()*1000 )
         $(drawP).text("It's a draw , no one win")
         $(playerP).hide()
-        $(computeurP).hide()
+        $(computerP).hide()
         $(drawP).show()
-        computeurCounterNumbers.text(computeurScore)
+        computerCounterNumbers.text(computerScore)
             userCounterNumbers.text(playerScore)
     }
-    if(computeurScore === 3){
+    if(computerScore === 3){
         rock.css("display","none")
         papper.css("display","none")
         scissors.css("display","none")
         playerP.css("display","none")
-        computeurP.css("display","none")
+        computerP.css("display","none")
         title.text("YOU LOST")
         $(title).show()
         $(start).show()
@@ -432,7 +432,7 @@ $(scissors).click(function () {
         papper.css("display","none")
         scissors.css("display","none")
         playerP.css("display","none")
-        computeurP.css("display","none")
+        computerP.css("display","none")
         title.text("YOU WIN")
         $(title).show()
         $(start).show()

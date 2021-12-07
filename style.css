@@ -33,7 +33,7 @@
     width: 40px;
     height: 32px;
 }
-.computeur{
+.computer{
     position: absolute;
     right: 10px;
 }
@@ -72,7 +72,7 @@
     top: 180px;
     margin-left: 45%;
 }
-.computeur-msg{
+.computer-msg{
     color: red;
     font-size: 43px;
     margin-left: 70%;
@@ -158,11 +158,11 @@ h1{
     color: #ff1010;
     margin-right: 50px;
 }
-.computeur.btn{
+.computer.btn{
     display: block;
     top: 10px;
 }
-.badge.computeur{
+.badge.computer{
     position: initial;
 }
 .btn-group{
